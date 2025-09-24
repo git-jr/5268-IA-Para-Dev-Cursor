@@ -1,0 +1,159 @@
+/* Estilos específicos da página Sobre Mim */
+
+/* Navegação */
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00e5ff;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00e5ff;
+}
+
+/* Header com navegação */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 60px 0;
+    background-color: #1a237e;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #00e5ff;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #00e5ff;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.skills-list i {
+    color: #00e5ff;
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image .image-frame {
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-image .image-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-description {
+        font-size: 1rem;
+    }
+    
+    .skills-list {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .main-content {
+        padding: 40px 0;
+    }
+}

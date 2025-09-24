@@ -22,6 +22,9 @@ body {
 .header {
     padding: 20px 0;
     background-color: #1a237e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -35,6 +38,36 @@ body {
 .logo i {
     color: #00e5ff;
     font-size: 1rem;
+}
+
+/* Navegação */
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00e5ff;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00e5ff;
 }
 
 /* Hero Section */
@@ -181,6 +214,17 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -210,6 +254,11 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 15px;
     }
     
     .hero {

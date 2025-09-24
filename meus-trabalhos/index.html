@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Trabalhos - Joana Santos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span>@joana.png</span>
+                <i class="fas fa-star"></i>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../sobre-mim/index.html" class="nav-link">Sobre Mim</a>
+                <a href="index.html" class="nav-link active">Meus Trabalhos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Meus Trabalhos</h1>
+            <p class="page-subtitle">Explore alguns dos meus trabalhos mais recentes e favoritos</p>
+            
+            <!-- Filtros -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="retratos">Retratos</button>
+                <button class="filter-btn" data-filter="casamentos">Casamentos</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+            </div>
+
+            <!-- Galeria -->
+            <div class="gallery">
+                <div class="gallery-item" data-category="retratos">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Retrato 1">
+                        <div class="gallery-overlay">
+                            <h3>Retrato Feminino</h3>
+                            <p>Fotografia de retrato com iluminação natural</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop" alt="Casamento 1">
+                        <div class="gallery-overlay">
+                            <h3>Cerimônia de Casamento</h3>
+                            <p>Momento especial do "sim"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=500&fit=crop" alt="Evento 1">
+                        <div class="gallery-overlay">
+                            <h3>Evento Corporativo</h3>
+                            <p>Fotografia de evento empresarial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lifestyle">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=500&fit=crop" alt="Lifestyle 1">
+                        <div class="gallery-overlay">
+                            <h3>Lifestyle</h3>
+                            <p>Momentos do dia a dia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="retratos">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop" alt="Retrato 2">
+                        <div class="gallery-overlay">
+                            <h3>Retrato Masculino</h3>
+                            <p>Fotografia de retrato profissional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="casamentos">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=500&fit=crop" alt="Casamento 2">
+                        <div class="gallery-overlay">
+                            <h3>Recepção de Casamento</h3>
+                            <p>Celebração e festa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="social-title">Acesse minhas redes:</h2>
+            <div class="social-buttons">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-pinterest"></i>
+                    <span>Pinterest</span>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido por Alura.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -46,69 +46,85 @@
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    gap: 80px;
+    align-items: flex-start;
 }
 
-.page-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #00e5ff;
-}
-
-.about-description {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    opacity: 0.9;
-    line-height: 1.8;
-}
-
-.skills {
-    margin-top: 40px;
-}
-
-.skills h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #00e5ff;
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    padding: 10px 0;
-}
-
-.skills-list i {
-    color: #00e5ff;
-    font-size: 1.2rem;
-    width: 20px;
-}
-
+/* Imagem à direita */
 .about-image {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-image .image-frame {
     max-width: 400px;
     width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #00e5ff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .about-image .image-frame img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.star-decoration {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #00e5ff;
+    font-size: 1.5rem;
+    background-color: #1a237e;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.image-caption {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    max-width: 400px;
+    font-style: italic;
+}
+
+/* Texto à esquerda */
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.about-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: white;
+    opacity: 0.95;
+}
+
+.about-description strong {
+    color: #00e5ff;
+    font-weight: bold;
 }
 
 /* Responsividade */
@@ -126,20 +142,28 @@
     
     .about-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
+        gap: 50px;
+    }
+    
+    .about-image {
+        order: 1;
+    }
+    
+    .about-text {
+        order: 2;
     }
     
     .page-title {
         font-size: 2.5rem;
+        justify-content: center;
     }
     
     .about-description {
         font-size: 1rem;
     }
     
-    .skills-list {
-        text-align: left;
+    .image-caption {
+        text-align: center;
     }
 }
 
@@ -151,9 +175,19 @@
     
     .page-title {
         font-size: 2rem;
+        flex-direction: column;
+        gap: 10px;
     }
     
     .main-content {
         padding: 40px 0;
+    }
+    
+    .about-content {
+        gap: 30px;
+    }
+    
+    .about-image .image-frame {
+        max-width: 300px;
     }
 }

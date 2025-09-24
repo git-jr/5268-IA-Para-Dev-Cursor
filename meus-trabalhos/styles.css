@@ -1,12 +1,24 @@
 /* Estilos específicos da página Meus Trabalhos */
 
+body {
+    background: linear-gradient(to bottom, #051020, #144077);
+    min-height: 100vh;
+}
+
 /* Header */
 .header {
     padding: 20px 0;
-    background-color: #1a237e;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -27,13 +39,13 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
-    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /* Conteúdo principal */
 .main-content {
     padding: 40px 0;
-    background-color: #1a237e;
     min-height: calc(100vh - 200px);
 }
 

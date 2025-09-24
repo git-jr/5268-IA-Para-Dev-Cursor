@@ -7,9 +7,10 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a237e;
+    background: linear-gradient(to bottom, #051020, #144077);
     color: white;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 .container {
@@ -21,10 +22,16 @@ body {
 /* Header */
 .header {
     padding: 20px 0;
-    background-color: #1a237e;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -73,7 +80,6 @@ body {
 /* Hero Section */
 .hero {
     padding: 60px 0;
-    background-color: #1a237e;
 }
 
 .hero-content {
@@ -132,16 +138,25 @@ body {
     position: relative;
 }
 
+/* Imagem de perfil padronizada */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .image-frame {
     position: relative;
+    border: 2px solid #00e5ff;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
 }
 
 .image-frame img {
     width: 100%;
-    max-width: 400px;
     height: 500px;
     object-fit: cover;
     display: block;
@@ -149,19 +164,18 @@ body {
 
 .star-decoration {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -25px;
+    right: 30px;
     color: #00e5ff;
-    font-size: 1.5rem;
-    background-color: #1a237e;
+    font-size: 1.8rem;
     padding: 8px;
     border-radius: 50%;
+    z-index: 10;
 }
 
 /* Social Media Section */
 .social-section {
     padding: 60px 0;
-    background-color: #1a237e;
     text-align: center;
 }
 

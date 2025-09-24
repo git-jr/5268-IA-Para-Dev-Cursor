@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento do Meu Novo Livro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Meu Livro</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#autor">Autor</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Descubra uma Nova História</h1>
+                <p class="hero-subtitle">Uma jornada emocionante que vai transformar sua perspectiva sobre a vida</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contato')">
+                        <i class="fas fa-book"></i>
+                        Pré-encomendar Agora
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('sobre')">
+                        <i class="fas fa-play"></i>
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="book-mockup">
+                    <div class="book-cover">
+                        <div class="book-title">Meu Livro</div>
+                        <div class="book-author">Por Você</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sobre o Livro -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre o Livro</h2>
+                <p>Uma obra que promete inspirar e transformar</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Uma História Única</h3>
+                    <p>Este livro apresenta uma narrativa envolvente que combina elementos de aventura, reflexão e crescimento pessoal. Cada página foi cuidadosamente elaborada para proporcionar uma experiência de leitura inesquecível.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Emocionante</h4>
+                            <p>Uma história que toca o coração</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Inspirador</h4>
+                            <p>Mensagens que transformam vidas</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h4>Único</h4>
+                            <p>Uma perspectiva original e autêntica</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>300+</h3>
+                        <p>Páginas</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15</h3>
+                        <p>Capítulos</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2024</h3>
+                        <p>Lançamento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autor -->
+    <section id="autor" class="author">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-image">
+                    <div class="author-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="author-text">
+                    <h2>Sobre o Autor</h2>
+                    <p>Com anos de experiência e paixão pela escrita, o autor traz uma perspectiva única e autêntica para esta obra. Sua dedicação em criar histórias que ressoam com os leitores é evidente em cada palavra cuidadosamente escolhida.</p>
+                    <div class="author-achievements">
+                        <div class="achievement">
+                            <i class="fas fa-trophy"></i>
+                            <span>Prêmio de Literatura</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-book-open"></i>
+                            <span>5+ Livros Publicados</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-users"></i>
+                            <span>10k+ Leitores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contato" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Não Perca o Lançamento!</h2>
+                <p>Seja um dos primeiros a ter acesso a esta obra incrível</p>
+                <form class="cta-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-bell"></i>
+                            Notificar-me
+                        </button>
+                    </div>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Meu Livro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

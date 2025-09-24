@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Criar efeito de transição suave
                 mainImage.style.opacity = '0.7';
                 setTimeout(() => {
-                    mainImage.src = clickedImage.src.replace('w=200&h=150', 'w=600&h=400');
+                    mainImage.src = clickedImage.src;
                     mainImage.alt = clickedImage.alt;
                     mainImage.style.opacity = '1';
                 }, 200);
